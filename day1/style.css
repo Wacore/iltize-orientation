@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+
+    --track-height: calc(16px * 0.3);
+    --thumb-height: calc(16px * 1.5);
+}
+
+/* General Styling */
+
+main {
+    max-width: 65vw;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+::placeholder {
+    font-size: .8em;
+}
+
+hr {
+    display: block;
+    margin: 2rem 0;
+}
+
+/* Start of Form Styling */
+
+fieldset {
+    background-color: rgba(255, 255, 0, 0.1);
+    border: 10px solid #ffff00;
+}
+
+.input-field {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-items: left;
+}
+
+.input-field .label-title {
+    justify-self: end;
+}
+
+/* start of input range styling */
+/* For Chrome, Safari, Edge */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #e9e9e9;
+    height: var(--track-height);
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: calc((var(--track-height) / 2) - var(--thumb-height) / 2);
+    background-color: #ffffff;
+    height: var(--thumb-height);
+    width: .8rem;
+    outline: 1px solid #d0d0d0;
+    outline-offset: 0px;
+}
+
+/* For Firefox */
+input[type="range"]::-moz-range-track {
+    background: #e9e9e9;
+    height: var(--track-height);
+}
+
+input[type="range"]::-moz-range-thumb {
+    border: none;
+    border-radius: 0;
+    background-color: #ececec;
+    height: var(--thumb-height);
+    width: .8rem;
+}
+
+/* end of input range styling */
+
+.indicators-title-left,
+.indicators-title-right {
+    color: white;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+
+.indicators-title-right {
+    background: purple;
+}
+
+.indicators-title-left {
+    background: rgb(169, 19, 19);
+}
+
+/* End of Form Styling */

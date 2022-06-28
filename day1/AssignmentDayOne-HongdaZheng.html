@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day One Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <hr>
+        <h1 id="header">Please Enter Your Details For Our Dating Website!</h1>
+
+        <!-- Details Form  -->
+        <form class="details-form">
+
+            <!-- User image section -->
+            <fieldset class="form-fielfset">
+                <legend>Your Face:</legend>
+                <div class="input-field"> <label class="label-title" for="faceImage">Your face:</label>
+                    <input type="file" id="faceImage" name="faceImage">
+                </div>
+
+                <div class="input-field">
+                    <span class="label-title">Image preview:</span>
+                    <div class="image-preview" id="imagePreview"></div>
+                </div>
+            </fieldset>
+            <br>
+            <!-- General details section -->
+            <fieldset class="form-fielfset">
+                <legend>Your General Details:</legend>
+                <div class="input-field">
+                    <label class="label-title" for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name">
+                </div>
+
+                <div class="input-field">
+                    <span class="label-title">Gender:</span>
+                    <span class="input-options">
+                        <input type="radio" name="gender" id="genderMale">
+                        <label class="label-title" for="genderMale">Male</label>
+                        <input type="radio" name="gender" id="genderFemale">
+                        <label class="label-title" for="genderFemale">Female</label>
+                    </span>
+                </div>
+
+                <div class="input-field">
+                    <label class="label-title" for="age">Age:</label>
+                    <input type="text" id="age" name="age" value="18">
+                </div>
+
+                <div class="input-field">
+                    <label class="label-title" for="birthDate">Date of birth:</label>
+                    <input type="text" id="birthDate" name="birthDate" placeholder="mm/dd/yyyy">
+                </div>
+
+                <div class="input-field">
+                    <label class="label-title" for="favoriteColor">Favorite Color:</label>
+                    <input type="color" id="favoriteColor" name="favoriteColor">
+                </div>
+
+                <div class="input-field">
+                    <label class="label-title" for="country">Your country:</label>
+                    <select id="country" name="country">
+                        <option></option>
+                        <option value="Anguilla">Anguilla</option>
+                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                        <option value="Aruba">Aruba</option>
+                        <option value="Bahamas">Bahamas</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="Belize">Belize</option>
+                        <option value="Bermuda">Bermuda</option>
+                        <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Cayman Islands">Cayman Islands</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Curacao">Curacao</option>
+                        <option value="Dominica">Dominica</option>
+                        <option value="Dominican Republic">Dominican Republic</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Greenland">Greenland</option>
+                        <option value="Grenada">Grenada</option>
+                        <option value="Guadeloupe">Guadeloupe</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Haiti">Haiti</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Jamaica">Jamaica</option>
+                        <option value="Martinique">Martinique</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Montserrat">Montserrat</option>
+                        <option value="Netherlands Antilles">Netherlands Antilles</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Panama">Panama</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                        <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                        <option value="Sint Maarten">Sint Maarten</option>
+                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                        <option value="United States">United States</option>
+                    </select>
+                </div>
+            </fieldset>
+            <br>
+
+            <!-- Indicator section -->
+            <fieldset class="form-fielfset">
+                <legend>Your Indicators:</legend>
+                <div class="input-field">
+                    <label class="label-title" for="height">Height:</label>
+                    <span class="input-options">
+                        <span class="indicators-title-left">Short</span>
+                        <input type="range" id="height" name="height" min="4.5" max="6.5" step=".1">
+                        <span class="indicators-title-right">Tall</span>
+                    </span>
+                </div>
+                <br>
+                <div class="input-field">
+                    <label class="label-title" for="salary">Salary:</label>
+                    <span class="input-options">
+                        <span class="indicators-title-left">Poor</span>
+                        <input type="range" id="salary" name="salary" min="800" max="120000" step="500">
+                        <span class="indicators-title-right">Rich</span>
+                    </span>
+                </div>
+                <br>
+            </fieldset>
+            <br>
+            <!-- Contact information section -->
+            <fieldset class="form-fielfset">
+                <legend>Your Contact Information:</legend>
+                <div class="input-field">
+                    <label class="label-title" for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="input-field">
+                    <label class="label-title" for="mobileNumber">Mobile:</label>
+                    <input type="tel" id="mobileNumber" name="mobileNumber">
+                </div>
+                <div class="input-field">
+                    <label class="label-title" for="address">Address:</label>
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input-field">
+                    <label class="label-title" for="contactMethod">Method to contact you:</label>
+                    <span class="input-options">
+                        <input type="checkbox" name="contactMethod" id="contactMethodEmail">
+                        <label class="label-title" for="contactMethodEmail" value="email">Email</label>
+                        <input type="checkbox" name="contactMethod" id="contactMethodWhatsapp">
+                        <label class="label-title" for="contactMethodWhatsapp" value="Whatsapp">Whatsapp</label>
+                        <input type="checkbox" name="contactMethod" id="contactMethodInappchat">
+                        <label class="label-title" for="contactMethodInappchat" value="in-app-chat">In-app chat</label>
+                    </span>
+                </div>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit!">
+        </form>
+    </main>
+</body>
+
+</html>
